@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -arch arm64 -bundle -Wl,-headerpad_max_install_names -Xlinker -undefined -Xlinker dynamic_lookup -flto -o GICAPM.cpython-314-darwin.so CMakeFiles/GICAPM.dir/src/GICAPM.cpp.o

@@ -1,0 +1,32 @@
+#+TITLE: Documentation of C++ development stages in General Insurance and Capital Modelling System
+#+AUTHOR: R
+#+OPTIONS: toc:nil prop:t
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper]
+#+LATEX_HEADER: \usepackage{times}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage[utf8]{inputenc}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+bibliography: references.bib
+
+\end{titlepage}
+
+\tableofcontents
+\flushleft
+* Data Simulation
+
+We need to take some form of information from the user about what sort of portfolio they want to simulate, use Monte Carlo sims to build it, and store it into a SQL database
+We need to figure out how exactly we simulate random variables and what random variables we want to have
+
+optimisations:
+using the GPU for monte carlo?
+ - opencl for windows+linux (https://ulhpc-tutorials.readthedocs.io/en/latest/gpu/opencl/) and metal for mac (https://developer.apple.com/metal/)
+
+First we need to figure out a working monte carlo implementation in c++
+https://www.quantstart.com/articles/Geometric-Brownian-Motion/
+https://www.quantstart.com/articles/European-vanilla-option-pricing-with-C-via-Monte-Carlo-methods/
+
+
+
+

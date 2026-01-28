@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/usr/bin/c++  -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /opt/homebrew/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/core.dir/src/GICAPM.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
+  "output": "CMakeFiles/core.dir/src/GICAPM.cpp.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIE -o CMakeFiles/App.dir/src/App.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/App.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/App.cpp",
+  "output": "CMakeFiles/App.dir/src/App.cpp.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/usr/bin/c++ -DGICAPM_EXPORTS -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -flto -o CMakeFiles/GICAPM.dir/src/GICAPM.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
+  "output": "CMakeFiles/GICAPM.dir/src/GICAPM.cpp.o"
+}
+]
