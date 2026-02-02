@@ -1,0 +1,529 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:OrgMode
+PRODID:-//Rahul Ghosh//Emacs with Org mode//EN
+X-WR-TIMEZONE:GMT
+X-WR-CALDESC:
+X-PUBLISHED-TTL:PT30M
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-CAEC434B-22FF-40AF-99B0-3B6065F6EC83
+DTSTART:20250831T223600
+DTEND:20250901T003600
+SUMMARY:Build C++ environment
+DESCRIPTION:• State "DONE" from "TODO" [2025-12-27 Sat 16:30]\n:Created: <2
+ 025-08-31 Sun 22:36> Priority: 5\n\nlsp is installed\, and java is functio
+ nal\, rest is still to do\n\n:Created: <2025-08-31 Sun 22:41>
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS2-CAEC434B-22FF-40AF-99B0-3B6065F6EC83
+DTSTART:20250831T224100
+DTEND:20250901T004100
+SUMMARY:Build C++ environment
+DESCRIPTION:• State "DONE" from "TODO" [2025-12-27 Sat 16:30]\n:Created: <2
+ 025-08-31 Sun 22:36> Priority: 5\n\nlsp is installed\, and java is functio
+ nal\, rest is still to do\n\n:Created: <2025-08-31 Sun 22:41>
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-FE50ED55-9D08-4757-A075-02FFCBE75F6E
+DTSTART:20250831T224500
+DTEND:20250901T004500
+SUMMARY:Build C environment
+DESCRIPTION:• State "DONE" from "TODO" [2025-12-27 Sat 16:30]\n:Created: <2
+ 025-08-31 Sun 22:45> Priority: 3\n\nlsp is installed\, thing is half writt
+ en in c\, won't be difficult
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-E6E1DF89-B3FF-48EB-AA80-F5EE7AB5E280
+DTSTART;VALUE=DATE:20251227
+DTEND;VALUE=DATE:20251228
+SUMMARY:Learn Elisp
+DESCRIPTION:• State "IN-PROGRESS" from "TODO" [2025-12-27 Sat 16:30]\n  <20
+ 25-12-27 Sat> Started video list elisp tutorial.\n:Created: <2025-08-31 Su
+ n 22:48> Priority: 3 Would be necessary to\njustify Emacs' existence withi
+ n my pc
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS2-E6E1DF89-B3FF-48EB-AA80-F5EE7AB5E280
+DTSTART:20250831T224800
+DTEND:20250901T004800
+SUMMARY:Learn Elisp
+DESCRIPTION:• State "IN-PROGRESS" from "TODO" [2025-12-27 Sat 16:30]\n  <20
+ 25-12-27 Sat> Started video list elisp tutorial.\n:Created: <2025-08-31 Su
+ n 22:48> Priority: 3 Would be necessary to\njustify Emacs' existence withi
+ n my pc
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-03FBA3AB-5E90-491F-BB7A-C67CF93A8D75
+DTSTART:20250831T224900
+DTEND:20250901T004900
+SUMMARY:Rebuild Lenovo for Server purposes
+DESCRIPTION:• State "DONE" from "IN-PROGRESS" [2025-12-27 Sat 16:31]\n• Sta
+ te "IN-PROGRESS" from "TODO" [2025-08-31 Sun 22:49]\n  Awaiting components
+ \n:Created: <2025-08-31 Sun 22:49> Priority: 5 Enables Pi and Homescale
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-D229F2D8-C134-484B-9EA5-7E25AD101E60
+DTSTART:20250831T225100
+DTEND:20250901T005100
+SUMMARY:Get final year house
+DESCRIPTION:• State "DONE" from "TODO" [2025-12-27 Sat 16:31]\n:Created: <2
+ 025-08-31 Sun 22:51> Priority: 5 Happens within the week
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-96EB3AF2-BF42-4F5B-8C82-EF28ADF76CD0
+DTSTART:20250831T225200
+DTEND:20250901T005200
+SUMMARY:Build Poker Solver
+DESCRIPTION::Created: <2025-08-31 Sun 22:52> Priority: 10 Underpins everyth
+ ing
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-2A715DC8-AE19-4854-AD2F-041C3CB8355F
+DTSTART:20250903T182000
+DTEND:20250903T202000
+SUMMARY:Change morning timer on lamp
+DESCRIPTION:• State "DONE" from "TODO" [2025-12-27 Sat 16:31]\n:Created: <2
+ 025-09-03 Wed 18:20> Priority: 3 make sure the timer in\nthe morning is 06
+ 30-0800
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-2A91AC36-181B-445A-8F84-2197D8C0ABEB
+DTSTART:20250903T201500
+DTEND:20250903T221500
+SUMMARY:learn go
+DESCRIPTION::Created: <2025-09-03 Wed 20:15> Priority: 5 Looks pretty easy 
+ to do\,\nvery clearly based on c-style languages
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-C416D5C8-2D72-4852-9A36-E33B620A9A4A
+DTSTART:20251118T153200
+DTEND:20251118T173200
+SUMMARY:
+DESCRIPTION:• State "WONT-DO" from "TODO" [2025-12-27 Sat 23:57]\n  what is
+  this?\n:Created: <2025-11-18 Tue 15:32>
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-2C88F106-17B8-4E3C-93DF-35A12A21AB36
+DTSTART;VALUE=DATE:20251230
+DTEND;VALUE=DATE:20251231
+SUMMARY:S: Monte Carlo Optimised Engine
+DESCRIPTION:• State "IN-PROGRESS" from "TODO" [2026-01-27 Tue 11:40]\n• Not
+ e taken on [2026-01-27 Tue 11:35]\n  Reading extra textbooks to get a bett
+ er idea theoretically\, speaking\n  to a lecturer as well.\n• Note taken o
+ n [2026-01-20 Tue 13:55]\n  Currently moving towards Differential Evolutio
+ n Monte Carlo\n  construction.\n:Created: <2025-12-27 Sat 16:54>\n\nSimula
+ te GBM paths\, price European and Asian options\, variance\nreduction\, li
+ nk with pybind11
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-2C88F106-17B8-4E3C-93DF-35A12A21AB36
+DTSTART:20251227T165400
+DTEND:20251227T185400
+SUMMARY:Monte Carlo Optimised Engine
+DESCRIPTION:• State "IN-PROGRESS" from "TODO" [2026-01-27 Tue 11:40]\n• Not
+ e taken on [2026-01-27 Tue 11:35]\n  Reading extra textbooks to get a bett
+ er idea theoretically\, speaking\n  to a lecturer as well.\n• Note taken o
+ n [2026-01-20 Tue 13:55]\n  Currently moving towards Differential Evolutio
+ n Monte Carlo\n  construction.\n:Created: <2025-12-27 Sat 16:54>\n\nSimula
+ te GBM paths\, price European and Asian options\, variance\nreduction\, li
+ nk with pybind11
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-F0105758-A1B7-4FF4-A666-7C76990E20CD
+DTSTART;VALUE=DATE:20260120
+DTEND;VALUE=DATE:20260121
+SUMMARY:S: Make Multithreaded Order Book
+DESCRIPTION::Created: <2025-12-27 Sat 23:49> Implement real-exchange style 
+ limit\norder book (L2\, L3).  Support adding\, modifying\, or cancelling o
+ rders.\nPrice-time priority matching\n\nThis is a program where I want you
+  to learn all about threading.\nPractice using std::thread\, std::mutex\, 
+ shared_mutex\, atomics\, lock\ncontention\, lock-free tradeoffs\, speed an
+ d safety above all\, they love\nclean concurrency.\n\nOne thread for marke
+ t data\, one for matching\, and one for\nlogging. Have a lock-free ring bu
+ ffer for inbound orders\, benchmark\norders per second\, and replay histor
+ ical order flow. Might be worth\nshipping to a known graphics library or j
+ ust pybinding historical data\nfunctions.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-F0105758-A1B7-4FF4-A666-7C76990E20CD
+DTSTART:20251227T234900
+DTEND:20251228T014900
+SUMMARY:Make Multithreaded Order Book
+DESCRIPTION::Created: <2025-12-27 Sat 23:49> Implement real-exchange style 
+ limit\norder book (L2\, L3).  Support adding\, modifying\, or cancelling o
+ rders.\nPrice-time priority matching\n\nThis is a program where I want you
+  to learn all about threading.\nPractice using std::thread\, std::mutex\, 
+ shared_mutex\, atomics\, lock\ncontention\, lock-free tradeoffs\, speed an
+ d safety above all\, they love\nclean concurrency.\n\nOne thread for marke
+ t data\, one for matching\, and one for\nlogging. Have a lock-free ring bu
+ ffer for inbound orders\, benchmark\norders per second\, and replay histor
+ ical order flow. Might be worth\nshipping to a known graphics library or j
+ ust pybinding historical data\nfunctions.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-1CA49FCC-4737-45A2-8455-AE61C3916434
+DTSTART;VALUE=DATE:20260103
+DTEND;VALUE=DATE:20260104
+SUMMARY:S: Finite Difference PDE Solver
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-27 Sat 23:55> Solve Black-Scholes PDE\, explicit or\nimplicit Crank
+ -Nicolson Schemes\, Boundary conditions\, compare\nnumerical vs analytical
+  solutions\,\n\nplot convergence measure runtime template based implementa
+ tion\,
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-1CA49FCC-4737-45A2-8455-AE61C3916434
+DTSTART:20251227T235500
+DTEND:20251228T015500
+SUMMARY:Finite Difference PDE Solver
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-27 Sat 23:55> Solve Black-Scholes PDE\, explicit or\nimplicit Crank
+ -Nicolson Schemes\, Boundary conditions\, compare\nnumerical vs analytical
+  solutions\,\n\nplot convergence measure runtime template based implementa
+ tion\,
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-A829E427-4168-48A7-B01B-222DEC38745F
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260703
+SUMMARY:S: Babysit Raaye
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-28 Wed 22:39]\n:Created: <2
+ 025-12-29 Mon 18:47>
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-A829E427-4168-48A7-B01B-222DEC38745F
+DTSTART:20251229T184700
+DTEND:20251229T204700
+SUMMARY:Babysit Raaye
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-28 Wed 22:39]\n:Created: <2
+ 025-12-29 Mon 18:47>
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-9269C0A4-BFF8-45E4-8B2E-BC649D12698B
+DTSTART;VALUE=DATE:20260112
+DTEND;VALUE=DATE:20260113
+SUMMARY:S: MATH5306 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:01> 9.00: The Edge\, Hall 1\n\nNeed to revise mathematica
+ l methods recorded in later lectures very\nwell too.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-9269C0A4-BFF8-45E4-8B2E-BC649D12698B
+DTSTART:20251231T110100
+DTEND:20251231T130100
+SUMMARY:MATH5306 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:01> 9.00: The Edge\, Hall 1\n\nNeed to revise mathematica
+ l methods recorded in later lectures very\nwell too.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-D5330D2D-AA44-4CDB-BFA6-F9735957DF95
+DTSTART;VALUE=DATE:20260115
+DTEND;VALUE=DATE:20260116
+SUMMARY:S: MATH5315 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:41]\n:Created: <2
+ 025-12-31 Wed 11:03> 0900: Need to revise certain proofs\nbetter\, memoris
+ e proprieties of GARCH modelling.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-D5330D2D-AA44-4CDB-BFA6-F9735957DF95
+DTSTART:20251231T110300
+DTEND:20251231T130300
+SUMMARY:MATH5315 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:41]\n:Created: <2
+ 025-12-31 Wed 11:03> 0900: Need to revise certain proofs\nbetter\, memoris
+ e proprieties of GARCH modelling.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-8F205531-7EEA-47EF-A94C-BB2367A6AF7F
+DTSTART:20260116T140000
+DTEND:20260116T160000
+SUMMARY:S: MATH5320 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:05> Revise this the most aggressively\,\nneed to cover wh
+ ole thing well.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-8F205531-7EEA-47EF-A94C-BB2367A6AF7F
+DTSTART:20251231T110500
+DTEND:20251231T130500
+SUMMARY:MATH5320 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:05> Revise this the most aggressively\,\nneed to cover wh
+ ole thing well.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-110959C7-60F1-4B5B-AF9F-87BF956AA396
+DTSTART:20251231T140000
+DTEND:20251231T160000
+SUMMARY:S: LUBS5004
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:06>\n\nNice of them to give us a break between exams\, co
+ ver lecture notes\nwell and cover seminar material for better understandin
+ g.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-110959C7-60F1-4B5B-AF9F-87BF956AA396
+DTSTART:20251231T110600
+DTEND:20251231T130600
+SUMMARY:LUBS5004
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:40]\n:Created: <2
+ 025-12-31 Wed 11:06>\n\nNice of them to give us a break between exams\, co
+ ver lecture notes\nwell and cover seminar material for better understandin
+ g.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-FBDF41E1-516C-4CD8-8784-F134E6D8A695
+DTSTART:20260122T140000
+DTEND:20260122T160000
+SUMMARY:S: LUBS5003 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:41]\n:Created: <2
+ 025-12-31 Wed 11:07>\n\nSame as LUBS5004.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-FBDF41E1-516C-4CD8-8784-F134E6D8A695
+DTSTART:20251231T110700
+DTEND:20251231T130700
+SUMMARY:LUBS5003 Exam
+DESCRIPTION:• State "DONE" from "TODO" [2026-01-27 Tue 11:41]\n:Created: <2
+ 025-12-31 Wed 11:07>\n\nSame as LUBS5004.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-62DC5AFE-D38B-41FA-BE06-10B058D66107
+DTSTART:20260119T203300
+DTEND:20260119T223300
+SUMMARY:CDS Pricing + Curve bootstrapping
+DESCRIPTION::Created: <2026-01-19 Mon 20:33> benchmark simplified approxima
+ tion\,\nadd sensitivity.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-DF3A4FA5-CA91-422F-AEB5-87BAF4C9FFC8
+DTSTART:20260120T135200
+DTEND:20260120T155200
+SUMMARY:Rates RNIV and VaR project
+DESCRIPTION::Created: <2026-01-20 Tue 13:52>\n\nMaybe in Python\, historica
+ l simulation engine for VaR and RNIV\ncalculations to showcase understandi
+ ng of FRTB and swaps\, including\nyield-curve risk factor mapping\, shocks
+ \, revaluation\, and reporting\;\nadded RNIV flags for basis/illiquidity/o
+ ptionalities not captured in\ncore VaR and documented limitations & remedi
+ ation plan.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-71B4425C-CCA4-410D-B791-4B2BC6527B02
+DTSTART:20260126T105700
+DTEND:20260126T125700
+SUMMARY:Find Scarlet Sails Book
+DESCRIPTION:• State "IN-PROGRESS" from "TODO" [2026-01-28 Wed 22:38]\n  Fou
+ nd the book\, linked it for reading.\n:Created: <2026-01-26 Mon 10:57>\n\n
+ Seems worth reading. Found [link here]\n(<https://www.wattpad.com/67630140
+ 2-scarlet-sails-1-foretelling>).
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-C6C444CA-A10A-4960-8641-EBE76E553F82
+DTSTART;VALUE=DATE:20260128
+DTEND;VALUE=DATE:20260129
+SUMMARY:S: Complete MATH5340 Seminar 1 Worksheet
+DESCRIPTION:• State "DONE" from "IN-PROGRESS" [2026-01-28 Wed 22:38]\n• Sta
+ te "IN-PROGRESS" from "TODO" [2026-01-28 Wed 17:57]\n:Created: <2026-01-26
+  Mon 16:10>\n\nAvailable in normal area.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-C6C444CA-A10A-4960-8641-EBE76E553F82
+DTSTART:20260126T161000
+DTEND:20260126T181000
+SUMMARY:Complete MATH5340 Seminar 1 Worksheet
+DESCRIPTION:• State "DONE" from "IN-PROGRESS" [2026-01-28 Wed 22:38]\n• Sta
+ te "IN-PROGRESS" from "TODO" [2026-01-28 Wed 17:57]\n:Created: <2026-01-26
+  Mon 16:10>\n\nAvailable in normal area.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-E28B9C30-5883-45A1-9E22-91E2492F5221
+DTSTART:20260128T101200
+DTEND:20260128T121200
+SUMMARY:Learn MATLAB
+DESCRIPTION::Created: <2026-01-28 Wed 10:12>\n\nWorth asking Luke about his
+  notes?
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-125BA7E5-28E3-488B-B4B8-1479B529581D
+DTSTART:20260128T112000
+DTEND:20260128T132000
+SUMMARY:Implement Binomial Model in C++
+DESCRIPTION::Created: <2026-01-28 Wed 11:20>\n\nI suspect our coursework wi
+ ll be exactly this in Python later.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-B361921D-1CBF-401A-AEBD-0425563827C1
+DTSTART:20260128T231100
+DTEND:20260129T011100
+SUMMARY:Improve SQL repo
+DESCRIPTION::Created: <2026-01-28 Wed 23:11>\n\nReally basic at the moment\
+ , create schema (DDL\, indexes\, constraints)\,\nqueries\, checks\, docs f
+ olders. Add a MakeFile that runs a series of\nqueries and exports the resu
+ lts to a .csv file. Additionally\, include:\n1. CTEs\,\n2. Window function
+ s (eg rolling averages\, )\,\n3. Cohorts style analysis\,\n4. Views (vw_da
+ ily_revenue)\,\n5. Transactions and upserts (INSERT…ON CONFLICT)\n6. Index
+ es and EXPLAIN\,\n7. Star Schema (fact tables and dimensions)\,\n8. Data q
+ uality checks\,\n9. Incremental loads pattern.\n\nAsk the following questi
+ ons:\n1. Revenue trend + rolling 30 day revenue\,\n2. Top customers by LTV
+  and recent activity\,\n3. Cohort retention by first purchase month\,\n4. 
+ Best selling artists by region\,\n5. Anomaly detection (spikes\, drops\, b
+ aseline).\n\nMake a /python/run_queries.py that connects to SQLite to fill
+ \nrequirements of MakeFile.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-D603D3E9-6760-438A-9483-9665D807107D
+DTSTART:20260129T160900
+DTEND:20260129T180900
+SUMMARY:Finish Sem1 MATH5430
+DESCRIPTION::Created: <2026-01-29 Thu 16:09> I also want to look into integ
+ rating\n\\sqrt{\\frac{X}{n}} where X ∼ χ^2_n. Ask the lecturer what "Stoch
+ astic\nFinance" book he asked us to look at Chapter 4 of.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-A22D2BE3-9ED3-48ED-9859-EF80BB4E4F2E
+DTSTART:20260129T212800
+DTEND:20260129T232800
+SUMMARY:Trinomial Model implementation?
+DESCRIPTION::Created: <2026-01-29 Thu 21:28>\n\nWhat if we had a uniform no
+ rmal setting the probability of going up or\ndown and simulated complex op
+ tions using Monte Carlo sampling?
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-F7C3A223-8DFE-474D-8902-785F697041AB
+DTSTART;VALUE=DATE:20260202
+DTEND;VALUE=DATE:20260203
+SUMMARY:S: Financial Computations Coursework
+DESCRIPTION::Created: <2026-01-30 Fri 10:46> Goes live Monday\, due in a we
+ ek\nThursday.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-F7C3A223-8DFE-474D-8902-785F697041AB
+DTSTART:20260130T104600
+DTEND:20260130T124600
+SUMMARY:Financial Computations Coursework
+DESCRIPTION::Created: <2026-01-30 Fri 10:46> Goes live Monday\, due in a we
+ ek\nThursday.
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-F05F9E1F-5079-4BBE-B901-A7538DE6329F
+DTSTART:20260130T155300
+DTEND:20260130T175300
+SUMMARY:Learn Julia
+DESCRIPTION::Created: <2026-01-30 Fri 15:53>\n\nInstalled Julialang and Jul
+ iaAP\, worth knowing for industry\, implement\na project in Julia?
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:SC-6AD6667B-8754-4916-9E13-564D3CF30C4E
+DTSTART:20260203T090000
+DTEND:20260203T110000
+SUMMARY:S: MATH5340 Seminar 2
+DESCRIPTION::Created: <2026-02-02 Mon 10:13>\n\nRoger Stevens LT.09
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-6AD6667B-8754-4916-9E13-564D3CF30C4E
+DTSTART:20260202T101300
+DTEND:20260202T121300
+SUMMARY:MATH5340 Seminar 2
+DESCRIPTION::Created: <2026-02-02 Mon 10:13>\n\nRoger Stevens LT.09
+CATEGORIES:todos
+END:VEVENT
+BEGIN:VEVENT
+DTSTAMP:20260202T200758Z
+UID:TS1-32qr8b13d2srqbck8p4cs0g5j9@google.com
+DTSTART:20260203T130000
+DTEND:20260203T150000
+SUMMARY:LUBS5050 Lecture
+LOCATION:Roger Stevens
+DESCRIPTION::LOGBOOK:\n:END <2026-02-03 Tue 13:00-15:00>\n\nLT.24
+CATEGORIES:calendar
+END:VEVENT
+END:VCALENDAR

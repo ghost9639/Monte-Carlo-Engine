@@ -1,0 +1,37 @@
+Steps:
+
+
+1) Simulate data
+   - generate sample portfolio using common distributions
+   - store in SQL
+
+2) Claims reserve calculations
+   - chain ladder calculations
+
+3) Pricing and Risk analysis
+   - fit models to projected claims
+   - predict future claims and premiums
+
+4) Capital Simulation
+   - model reinsurance treaties
+   - calculate net losses and VaR
+
+5) UI
+   - Make a Python UI that calls underlying C program to do things the way actuaries like them
+   - Make underlying C program callable in term if real time speed is necessary
+
+6) Zig 
+   - Change compiler from clang to Zig for cross-compilation 
+   - Extend to PiPy?
+
+Interesting ideas
+
+  visual term ui?
+  real time claims readjustment?
+  running monte carlo sims in GPU?
+
+
+Documentation:
+    cppDocs                - Details on creation of underlying .cpp engine
+    PythonDocs             - Details on using engine in Python
+    ProjectImplementation  - Project Used in Action, Python and Cterm
