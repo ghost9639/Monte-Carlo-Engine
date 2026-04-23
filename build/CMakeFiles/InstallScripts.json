@@ -1,7 +1,12 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/cmake_install.cmake"
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/cmake_install.cmake",
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/cmake_install.cmake",
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googletest/cmake_install.cmake",
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CPPTests/cmake_install.cmake",
+		"/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/_deps/pybind11-build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

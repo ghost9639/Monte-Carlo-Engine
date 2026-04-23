@@ -1,4 +1,4 @@
-% Created 2026-01-28 Wed 10:23
+% Created 2026-02-12 Thu 00:33
 % Intended LaTeX compiler: lualatex
 \documentclass[a4paper]{article}
 \usepackage{fontspec}
@@ -44,7 +44,7 @@
 \tableofcontents
 \flushleft
 \section{Theoretical Basis}
-\label{sec:org6d1b4af}
+\label{sec:orgd8a7171}
 
 This simulator will be based on the Differential Evolution Monte Carlo approach, as described by (Cajo J. F. Ter Braak, 2006). We need to implement an uncertainty distribution using Bayesian priors. DEMC is popular since multiple chains run in parallel. We use DEMC because it finds an appropriate scale and orientation for the jumping distribution. \textbf{The jumps are a fixed multiple of the differences of two random parameter vectors currently in the population}. Selection process employs "Metropolis ratio", which defines the probability with which  proposal is accepted. If uncertainty distributions are known, the efficiency of DEMC with respect to random walk Metropolis with optimal multivariate Normal jumps increases with population size. DEMC supports multidimensional updates in multi-chain "Metropolis-within-Gibbs" sampling. It is simpler and faster than conventional models, even in the face of adverse properties like quasi col-linear parameters and multi-modal densities. This implementation uses multiple Markov chains, initialised from over-dispersed states, in parallel, and applying dynamic programming principles. Adaptive direction sampling solves the orientation problem but not the scale problem.
 
@@ -65,10 +65,10 @@ If accepted, We have a new current value \((\mathbf{X}' \leftarrow \mathbf{X} + 
 
 Where \textbf{x}\textsubscript{j} ' is the updated value. The acceptance probability is \(\pi \left(\mathbf{x}^{(B)*}{i} \right / \pi \left(\mathbf{x}^{(B)}_i \right))\). This algorithm is a generalised version of the RWM and Gibbs sampler, leading to the name \textbf{random walk Metropolis-within-Gibbs} or \textbf{RWM-within-Gibbs}. While RWM is reversible, RWM-within-Gibbs is not. Under reasonably general circumstances it can be shown the chains will converge on a stationary distribution.
 \subsection{Efficiency}
-\label{sec:org64b91a4}
+\label{sec:org8a12e7e}
 Consecutive draws of an MCMC chain are correlated, with the marginal distributions converging to \(\pi\)(.). For efficiency, we need to grasp convergence and mixing.
 \subsubsection{Convergence}
-\label{sec:orgd6610b6}
+\label{sec:orgc06c667}
 
 For evaluating convergence, we can look at trace plots for different members in the chain. A Markov chain with a transition kernel P(.) is geometrically ergodic with stationary distribution \(\pi\) (.) if:
 
@@ -86,7 +86,7 @@ Convergence is very experimental in definition, essentially being when the next 
 
 \[\hat{f}_n := \frac{1}{n} \sum^{N}_{m+1} f(\mathbf{X}_i) \]
 \subsubsection{Mixing}
-\label{sec:org6946fdf}
+\label{sec:org2317cc4}
 For a stationary chain, \textbf{X}\textsubscript{0} is sampled from \(\pi (.), \text{ } \forall k > 0, \text{ } i \geq 0\):
 
 \[\text{Cov} \left[f(\mathbf{X}_k), f(\mathbf{X}_{k+i}) \right] = \text{Cov} \left[f(\mathbf{X}_0), f (\mathbf{X}_i) \right] \]
@@ -115,13 +115,13 @@ The expectation of \(S^2_{E uc}\) at stationarity is called the expected square 
 
 \[\mathbb{E} \left[(X_i ' - X_i)^2 \right] = \text{Var} [X_i ' - X_i] = 2 \sigma^2_i (1 - \text{Corr}(X_i, X_i ')) \]
 
-When the chain is stationary and posterior variance is finite, maximising the ESEJD is equivalent to minimising a weighted sum of the autocorrelations up to a lag value \(l - 1\). We can observe how autocorrelation varies against different rate parameter choices (Figure \ref{fig:org942f130}). 
+When the chain is stationary and posterior variance is finite, maximising the ESEJD is equivalent to minimising a weighted sum of the autocorrelations up to a lag value \(l - 1\). We can observe how autocorrelation varies against different rate parameter choices (Figure \ref{fig:org2e135b6}). 
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{Theoretical_Basis/2026-01-27_14-10-48_screenshot.png}
-\caption{\label{fig:org942f130}Trace plots and autocorrelation plots for a standard Gaussian initiailised with \(x = 0\) and using an RWM with a Gaussian proposal algorithm for 1000 iterations. The scale parameters used were 0.24, 0.26, and 24 respectively}
+\caption{\label{fig:org2e135b6}Trace plots and autocorrelation plots for a standard Gaussian initiailised with \(x = 0\) and using an RWM with a Gaussian proposal algorithm for 1000 iterations. The scale parameters used were 0.24, 0.26, and 24 respectively}
 \end{figure}
 
 The distance (MSJD)
@@ -130,7 +130,7 @@ The distance (MSJD)
 
 is proportional to the unweighted sum of the \(l-1\) autocorrelations over the principle components of the ellipse. 
 \subsection{Algorithmic idea}
-\label{sec:org3fbe5a7}
+\label{sec:orgf5faf43}
 
 A common jumping distribution in \(\mathbb{R}^d\) is the multivariate normal distribution, for which we need to identify a covariance matrix. The \emph{d} variances and the \(d(d-1)/2\) covariances must be chosen to balance progress in each step and a reasonable "acceptance rate" (the square-root of the variance relates to the relevant scale of each parameter and the correlations relate to the orientation). These are traditionally calculated experimentally. If parameters are highly correlated, special precautions must be taken to avoid singularity of the covariance matrix. We will run \emph{N} chains in parallel, and the jumps for a current chain are derived from the remaining \(N-1\) chains. We can define a simple strategy that balances understanding and using the space: we take the differences of vectors of two randomly chosen steps, multiply the difference with factor \(\gamma\), and add the result to the vector of the current chain. The difference vector contains scale and orientation information. \linebreak
 
@@ -165,7 +165,7 @@ for (s = 0, s < N_generation, s++) { // through generations
 
 X is an \(N \times d\) matrix with elements X[i][j] and X[i] = \(\mathbf{x}_i\), the ith member chain of the population. \texttt{x\_p} is the proposal \emph{d}-vector \(\mathbf{x}_i\), and fitness(.) = \(\pi\) (.) , c = \(\gamma\). Record(X) collects the draws. CoolingSchedule() = 1 for DEMC but otherwise for simulated tempering or annealing versions. A random walk Metropolis algorithm (RWM) is a generic algorithm to sample form a d-dimensional target distribution with probability density function \(\pi (.)\). We implement with the multivariate normal, centred at the current point, with variance equal to the covariance matrix. It repeatedly updates a single d-dimensional parameter vector \textbf{x} with proposal \(\mathbf{x}_p = \mathbf{x} + \epsilon\) where \(\epsilon \sim N(0, \overset{\sim}{\sum})\) is selected by \(\mathbf{x} = \mathbf{x}_p\), with probability \(\min (1, r)\) or continuing with \textbf{x} otherwise. This creates a Markov chain with stationary distribution \(\pi (.)\). In Bayesian theory, \(\pi (.)\) \(\propto\) prior \texttimes{} likelihood. The choice of \(\tilde{\sum} = c^2 \sum, \sum = \text{Cov}_{\pi} (\mathbf{x})\), the covariance of the target distribution, and c as the fraction of acceptances around 0.23 for large d. For a multivariate normal target, \(c = 2.38 / \sqrt{d}\). 
 \subsection{Genetic algorithms}
-\label{sec:orga13eb0c}
+\label{sec:orgc242e74}
 
 Several Markov chains are simulated in parallel. The state of a single chain is given in the d-dimensional vectors, where these vectors are N vectors \(\mathbf{x}_1...,\mathbf{x}_N\). The vectors become a population \textbf{X}, an \(N \times d\) matrix. In Bayesian analysis the initial population can be drawn from a prior distribution. DE is a simple genetic algorithm for optimisation in real parameter spaces. For N > 4, the default proposal for ith member \textbf{x}\textsubscript{i} is:
 
@@ -192,7 +192,7 @@ b. The stationary distribution is unique if the chain is aperiodic, not transien
 
 Because the joint stationary PDF of the N chains factorises out across the states, the individual chains are independent at any generation after DEMC has reached independence from the initial value. This allows us to derive the Gelman \(\hat{R}\) statistic (they suggest below 1.2). 
 \subsection{Practical application of DEMC}
-\label{sec:org00c5f88}
+\label{sec:org922855b}
 If they exist, \(\mu = \mathbb{E}(\mathbf{x}), \sum = \text{Cov}(\mathbf{x})\), the expectation and covariance of the target distribution. After convergence, for each population member i and j:
 
 \[\mathbb{E}\left[(\mathbf{x}_i - \mathbf{x}_j)(\mathbf{x}_i - \mathbf{x}_j)^T \right] = 2 \sum\]
@@ -206,25 +206,25 @@ Where we take the average across the pairs of population members for a paired me
 
 The authors used \(\mathbf{e} \sim \text{Unif} [-b, b]^d, d = 10^{-4}\) for their simulations. For their multivariate normal and student distribution (3 dof) estimations they used zero means, and set their covariance matrix such that the variance of the jth variable was equal to j and the pairwise correlations were all 0.5. They also simulated bimodal distributions using two normal mixtures. They used the default \(\gamma = 2.38 / \sqrt{2d}\). In the sequel, draws count the number of proposal evaluations (each using one evaluation of \(\pi\)(.)) and generations refer to cycles through the population.
 \subsubsection{Multivariate Normal}
-\label{sec:org9818724}
-We can observe that with more members (higher N), the evolutionary process is far smoother (Figure \ref{fig:orgedb5756}). Convergence also seems to occur faster in populations with lower variance. Mean convergence happens within generally less than 100 generations but standard deviation of the last variable and covariance take a long time to converge, likely due the large number of estimates required. In all normal distribution test cases however, the estimates eventually converged around the true value, even in the presence of bad priors. They find N = 200 fastest in practice. The \(\hat{R}\) -statistic crosses 1.2 for all 100 parameters after 900-1000 generations for all tested population sizes. The acceptance fraction varied (binomially) around 0.2 for N = 101. But after convergence, for around \(N \geq 200\) the mean fraction was 0.23. We see steady increases in acceptance rates after time, though not stable enough to build convergence around. They also show experimentally that their efficiencies increase with \(N / d\) 
+\label{sec:org7401e76}
+We can observe that with more members (higher N), the evolutionary process is far smoother (Figure \ref{fig:orgd5200ca}). Convergence also seems to occur faster in populations with lower variance. Mean convergence happens within generally less than 100 generations but standard deviation of the last variable and covariance take a long time to converge, likely due the large number of estimates required. In all normal distribution test cases however, the estimates eventually converged around the true value, even in the presence of bad priors. They find N = 200 fastest in practice. The \(\hat{R}\) -statistic crosses 1.2 for all 100 parameters after 900-1000 generations for all tested population sizes. The acceptance fraction varied (binomially) around 0.2 for N = 101. But after convergence, for around \(N \geq 200\) the mean fraction was 0.23. We see steady increases in acceptance rates after time, though not stable enough to build convergence around. They also show experimentally that their efficiencies increase with \(N / d\) 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{Theoretical_Basis/2026-01-24_11-13-04_screenshot.png}
-\caption{\label{fig:orgedb5756}Testing Simulating Known Normal Distributions}
+\caption{\label{fig:orgd5200ca}Testing Simulating Known Normal Distributions}
 \end{figure}
 
-We can identify our covariance matrix in a known distribution by simulating different values for \emph{d} and \emph{N}. The efficiency metric the authors use is \(100 \times \text{MSE}_{\text{RWM}} / \text{MSE}_{\text{DEMC}}\). The statistics were the empirical percentiles, taken from the sample for the first and \emph{d}-th dimensional targets in a \emph{d}-dimensional simulation. Theoretical MSEs for the normal distribution are equal for 2.5 and 97.5 percentiles, their estimated MSEs were averaged for the \(\text{MSE}_\text{DEMC}\) statistic. Experimentally found that DEMC had high efficiency, exceeding 70\% (Figure \ref{fig:orgd35004a}). They did not choose to change \(\gamma\) for the normal distribution after testing, and found that \(c = 3.0\) was a good selection across dimensional sizes. Even with 10\textsuperscript{5} burn in and 10\textsuperscript{6} draws for an initial distribution of Unif [-5, 15]\textsuperscript{d} that neither RWM nor DEMC converged based on Gelman's \(\hat{R}\). However, after shifting to an initial distribution with a normal distribution with the true mean and covariance they had no convergence problems. 
+We can identify our covariance matrix in a known distribution by simulating different values for \emph{d} and \emph{N}. The efficiency metric the authors use is \(100 \times \text{MSE}_{\text{RWM}} / \text{MSE}_{\text{DEMC}}\). The statistics were the empirical percentiles, taken from the sample for the first and \emph{d}-th dimensional targets in a \emph{d}-dimensional simulation. Theoretical MSEs for the normal distribution are equal for 2.5 and 97.5 percentiles, their estimated MSEs were averaged for the \(\text{MSE}_\text{DEMC}\) statistic. Experimentally found that DEMC had high efficiency, exceeding 70\% (Figure \ref{fig:org177eb7e}). They did not choose to change \(\gamma\) for the normal distribution after testing, and found that \(c = 3.0\) was a good selection across dimensional sizes. Even with 10\textsuperscript{5} burn in and 10\textsuperscript{6} draws for an initial distribution of Unif [-5, 15]\textsuperscript{d} that neither RWM nor DEMC converged based on Gelman's \(\hat{R}\). However, after shifting to an initial distribution with a normal distribution with the true mean and covariance they had no convergence problems. 
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=.9\linewidth]{Theoretical_Basis/2026-01-27_20-41-37_screenshot.png}
-\caption{\label{fig:orgd35004a}Estimated efficiency for simulations at different percentiles}
+\caption{\label{fig:org177eb7e}Estimated efficiency for simulations at different percentiles}
 \end{figure}
 \subsubsection{Normal Mixture Target}
-\label{sec:org83e972f}
+\label{sec:org0fb2c6d}
 
 In this test, they targeted a mixture f two normal distributions:
 
@@ -232,7 +232,7 @@ In this test, they targeted a mixture f two normal distributions:
 
 If it's bold it's a vector across our \emph{d}-dimensions. 
 \section{Random Ideas}
-\label{sec:org43608cb}
+\label{sec:orgcc489ac}
 
 \begin{enumerate}
 \item We need to figure out how exactly we implement an uncertainty distribution.
@@ -245,7 +245,7 @@ If it's bold it's a vector across our \emph{d}-dimensions.
 \item OpenGL, Metal, and Vulkan
 \end{enumerate}
 \section{References}
-\label{sec:org7e1ba82}
+\label{sec:org4c9efbd}
 \noindent
 Cajo J. F. Ter Braak (2006). \emph{A Markov Chain Monte Carlo version of the genetic algorithm Differential Evolution: easy Bayesian computing for real parameter spaces}, Statistics and Computing.
 

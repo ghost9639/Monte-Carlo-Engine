@@ -34,21 +34,29 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/run/current-system/sw/bin/objdump")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE MODULE FILES "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/GICAPM.cpython-314-darwin.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./GICAPM.cpython-314-darwin.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./GICAPM.cpython-314-darwin.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE MODULE FILES "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/MonteCarloSampling.cpython-313-darwin.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MonteCarloSampling.cpython-313-darwin.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MonteCarloSampling.cpython-313-darwin.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./GICAPM.cpython-314-darwin.so")
+      execute_process(COMMAND "/run/current-system/sw/bin/strip" -x "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./MonteCarloSampling.cpython-313-darwin.so")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CMakeFiles/GICAPM.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+  include("/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CMakeFiles/MonteCarloSampling.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/cmake_install.cmake")
+  include("/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CPPTests/cmake_install.cmake")
+  include("/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/_deps/pybind11-build/cmake_install.cmake")
+
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

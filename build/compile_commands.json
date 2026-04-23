@@ -1,20 +1,50 @@
 [
 {
   "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
-  "command": "/usr/bin/c++  -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /opt/homebrew/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/core.dir/src/GICAPM.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
-  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
-  "output": "CMakeFiles/core.dir/src/GICAPM.cpp.o"
-},
-{
-  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIE -o CMakeFiles/App.dir/src/App.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/App.cpp",
+  "command": "/run/current-system/sw/bin/c++ -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -o CMakeFiles/MCCore.dir/src/App.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/App.cpp",
   "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/App.cpp",
-  "output": "CMakeFiles/App.dir/src/App.cpp.o"
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CMakeFiles/MCCore.dir/src/App.cpp.o"
 },
 {
   "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
-  "command": "/usr/bin/c++ -DGICAPM_EXPORTS -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /opt/homebrew/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/include/python3.14 -isystem /opt/homebrew/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -flto -o CMakeFiles/GICAPM.dir/src/GICAPM.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
-  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/GICAPM.cpp",
-  "output": "CMakeFiles/GICAPM.dir/src/GICAPM.cpp.o"
+  "command": "/run/current-system/sw/bin/c++ -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIE -Wall -Wextra -Wpedantic -o CMakeFiles/App.dir/src/main.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/main.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/src/main.cpp",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CMakeFiles/App.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -DMonteCarloSampling_EXPORTS -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /nix/store/b0phch57h19im9f1ab2p7339sgnm7mq5-python3-3.13.12-env/include/python3.13 -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/_deps/pybind11-src/include -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIC -fvisibility=hidden -o CMakeFiles/MonteCarloSampling.dir/pybind11/MonteCarloSampling.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/pybind11/MonteCarloSampling.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/pybind11/MonteCarloSampling.cpp",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CMakeFiles/MonteCarloSampling.dir/pybind11/MonteCarloSampling.cpp.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/include -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest -O3 -DNDEBUG -std=c++17 -arch arm64 -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest -O3 -DNDEBUG -std=c++17 -arch arm64 -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/include -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest -O3 -DNDEBUG -std=c++17 -arch arm64 -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/src/gtest-all.cc",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest -O3 -DNDEBUG -std=c++17 -arch arm64 -fPIC -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/src/gtest_main.cc",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+},
+{
+  "directory": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build",
+  "command": "/run/current-system/sw/bin/c++ -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo -I/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest/include -isystem /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/googletest-src/googletest -O3 -DNDEBUG -std=gnu++17 -arch arm64 -fPIE -o CPPTests/CMakeFiles/INTests.dir/InverseNormalTests.cpp.o -c /Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/CPPTests/InverseNormalTests.cpp",
+  "file": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/CPPTests/InverseNormalTests.cpp",
+  "output": "/Users/rahulghosh/Desktop/QuantProjects/MonteCarlo/build/CPPTests/CMakeFiles/INTests.dir/InverseNormalTests.cpp.o"
 }
 ]
